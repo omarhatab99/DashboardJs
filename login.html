@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Dashboard Design</title>
+    <!-- web font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- end web font -->
+    <!-- material icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <!-- end material icon -->
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- end font-awesome -->
+    <!-- style -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/login.css">
+    <!-- end style -->
+</head>
+<body>
+    <div class="container">
+        <form action="index.html">
+            <h2>Login</h2>
+            <ul id="errors-valid" class="form-text w-100 text-start text-danger"></ul>
+            <p id="valid-all-par" class="form-text text-start text-danger"></p>
+            <div class="form-group mb-2">
+                <input type="text" name="email" id="user-email" placeholder="email">
+                <p id="valid-email-par" class="form-text text-start text-muted ps-1">please enter your email is required</p>
+                <span id="valid-icon-email" class="valid-icon"><img src="images/valid-icon.png" alt=""></span>
+            </div>
+            <div class="form-group mb-2">
+                <input type="password" name="password" id="user-password" placeholder="password">
+                <p id="valid-pass-par" class="form-text text-start text-muted ps-1">please enter your password is required</p>
+                <span id="valid-icon-pass" class="valid-icon"><img src="images/valid-icon.png" alt=""></span>
+            </div>
+            <button class="btn btn-primary" type="submit">Login</button>
+            <a class="p-3 text-decoration-none" href="register.html">register new account</a>
+        </form>
+    </div>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/login.js" type="module"></script>
+</body>
+</html>

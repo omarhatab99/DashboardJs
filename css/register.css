@@ -1,0 +1,54 @@
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+}
+
+form {
+    margin: 30px auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 500px;
+}
+
+form input {
+    background-color: #f3f3f3ba;
+    border: none;
+    border-bottom: 2px solid #adb5bd;
+    outline: none;
+    padding: 17px;
+    width: 100%;
+    transition: 0.3s;
+}
+
+form input:focus {
+    box-shadow: 0 0 5px 0px #D3D3D3;
+    outline: none;
+}
+
+form .form-group {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+form .form-group span {
+    position: absolute;
+    top: 35%;
+    right: -10%;
+    transform: translateY(-60%);
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.border-invalid {
+    transition: 0.3s;
+    border-bottom-color: #fa172c70;
+}
+
+.border-valid {
+    transition: 0.3s;
+    border-bottom-color: #17fa1770;
+}

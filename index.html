@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Dashboard Design</title>
+    <!-- web font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- end web font -->
+    <!-- material icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <!-- end material icon -->
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- end font-awesome -->
+    <!-- style -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- end style -->
+</head>
+<body>
+    <div class="loader">
+        <div class="spinner-grow text-dark" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+    <section id="header" class="header">
+        <nav class="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" alt="logo">
+                    <h2>Omar <span class="text-danger">Prog</span></h2>
+                </a>
+                <div class="profile">
+                    <div class="dark-mode">
+                        <span data-mode="light" class="material-icons-sharp active">
+                            light_mode
+                        </span>
+                        <span data-mode="dark" class="material-icons-sharp">
+                            dark_mode
+                        </span>
+                    </div>
+                    <div class="profile-info">
+                        <div class="info">
+                            <p>Hey, <b>Ali</b></p>
+                            <small>Admin</small>
+                        </div>
+                        <div class="profile-photo">
+                            <img class="img-thumbnail" src="images/avatar2.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section id="dashboard" class="dashboard">
+        <div class="container-fluid">
+            <!-- start aside -->
+            <aside class="open">
+                <div class="toggle">
+                    <div class="sidebar">
+                        <button id="menu">
+                            <span class="material-icons-sharp">
+                                menu
+                            </span>
+                        </button>
+                        <a href="#" class="active" data-cont="#main-dashboard">
+                            <span class="material-icons-sharp">
+                                dashboard
+                            </span>
+                            <h3>Dashboard</h3>
+                        </a>
+                        <a href="#" data-cont="#users">
+                            <span class="material-icons-sharp">
+                                person_outline
+                            </span>
+                            <h3>Users</h3>
+                        </a>
+                        <a href="#" data-cont="#history">
+                            <span class="material-icons-sharp">
+                                receipt_long
+                            </span>
+                            <h3>History</h3>
+                        </a>
+                        <a href="#" data-cont="#analytics">
+                            <span class="material-icons-sharp">
+                                insights
+                            </span>
+                            <h3>Analytics</h3>
+                        </a>
+                        <a href="#" data-cont="#tickets">
+                            <span class="material-icons-sharp">
+                                mail_outline
+                            </span>
+                            <h3>Tickets</h3>
+                            <span class="message-count  badge bg-danger ms-2">27</span>
+                        </a>
+                        <a href="#" data-cont="#sales">
+                            <span class="material-icons-sharp">
+                                inventory
+                            </span>
+                            <h3>Sale List</h3>
+                        </a>
+                        <a href="#" data-cont="#reports">
+                            <span class="material-icons-sharp">
+                                report_gmailerrorred
+                            </span>
+                            <h3>Reports</h3>
+                        </a>
+                        <a href="#" data-cont="#settings">
+                            <span class="material-icons-sharp">
+                                settings
+                            </span>
+                            <h3>settings</h3>
+                        </a>
+                        <a href="#" data-cont="#login">
+                            <span class="material-icons-sharp">
+                                add
+                            </span>
+                            <h3>New Login</h3>
+                        </a>
+                        <a id="logout" href="#">
+                            <span class="material-icons-sharp">
+                                logout
+                            </span>
+                            <h3>Logout</h3>
+                        </a>
+                    </div>
+                </div>
+            </aside>            
+            <!-- end aside -->
+            <!-- start main -->
+            <main>
+                <section id="users" class="pt-5">Hello Section users</section>
+                <section id="history" class="pt-5">Hello Section history</section>
+                <section id="analytics" class="pt-5">Hello Section Analytics</section>
+                <section id="tickets" class="pt-5">Hello Section tickets</section>
+                <section id="sales" class="pt-5">Hello Section sales</section>
+                <section id="reports" class="pt-5">Hello Section reports</section>
+                <section id="settings" class="pt-5">Hello Section settings</section>
+                <section id="login" class="pt-5">Hello Section login</section>
+                <section id="main-dashboard" class="main-dashboard">                           
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-lg-8">
+                            <!-- analysis -->
+                            <div class="analysis pt-3">
+                                <div class="row">
+                                    <div class="col-12 col-lg-4">
+                                        <div class="analysis-box sales">
+                                            <div class="info">
+                                                <h3>Total Sales</h3>
+                                                <h3>$65.024</h3>
+                                            </div>
+                                            <div class="progress sales">
+                                                <span class="progress-left">
+                                                    <span class="progress-bar"></span>
+                                                </span>
+                                                <span class="progress-right">
+                                                    <span class="progress-bar"></span>
+                                                </span>
+                                                <div class="progress-value">90%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-4">
+                                        <div class="analysis-box visits">
+                                            <div class="info">
+                                                <h3>Site Visit</h3>
+                                                <h3>24.981</h3>
+                                            </div>
+                                            <div class="progress visits">
+                                                <span class="progress-left">
+                                                    <span class="progress-bar"></span>
+                                                </span>
+                                                <span class="progress-right">
+                                                    <span class="progress-bar"></span>
+                                                </span>
+                                                <div class="progress-value">90%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-4">
+                                        <div class="analysis-box searches">
+                                            <div class="info">
+                                                <h3>Total Sales</h3>
+                                                <h3>80.024</h3>
+                                            </div>
+                                            <div class="progress searches">
+                                                <span class="progress-left">
+                                                    <span class="progress-bar"></span>
+                                                </span>
+                                                <span class="progress-right">
+                                                    <span class="progress-bar"></span>
+                                                </span>
+                                                <div class="progress-value">90%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end analysis -->
+                            <!-- new users -->
+                            <div class="users-list">
+                                <h2 class="users-head">New Users</h2>
+                                <div class="users">
+                                    <button id="add-user" class="add-user btn btn-outline-primary"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        create 
+                                    </button>
+                                </div> 
+                            </div>
+                            <!-- end new users -->
+                            <!-- start recent orders -->
+                            <div class="recent-orders">
+                                <h2>Recent Orders</h2>
+                                <button id="create-course" class="add-course btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                    create
+                                </button>
+                                <div class="orders">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Course Name</th>
+                                                <th>Course Number</th>
+                                                <th>Payment</th>
+                                                <th>Status</th>
+                                                <th>actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+                                </div>
+                                <a class="text-primary" href="#">Show More</a>
+                            </div>
+                            <!-- end recent orders -->
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="details p-3">
+                                <div class="user-profile">
+                                    <img src="images/logo.png" alt="logo">
+                                    <h2>Omar<span class="text-danger">Prog</span></h2>
+                                    <p>Fullstack Web Developer</p>
+                                </div>
+                                <div class="reminders">
+                                    <div class="header">
+                                        <h2>Reminders</h2>
+                                        <span class="material-icons-sharp">
+                                            notifications_none
+                                        </span>
+                                    </div>
+                                    <div class="notification">
+                                        <div class="icon bg-success">
+                                            <span class="material-icons-sharp">
+                                                volume_up
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <div class="info">
+                                                <h3>Workshop</h3>
+                                                <small class="text_muted">
+                                                    08:00 AM - 12:00 PM
+                                                </small>
+                                            </div>
+                                            <span class="material-icons-sharp">
+                                                more_vert
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="notification deactive">
+                                        <div class="icon bg-danger">
+                                            <span class="material-icons-sharp">
+                                                edit
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <div class="info">
+                                                <h3>Workshop</h3>
+                                                <small class="text_muted">
+                                                    08:00 AM - 12:00 PM
+                                                </small>
+                                            </div>
+                                            <span class="material-icons-sharp">
+                                                more_vert
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="notification add-reminder">
+                                        <div>
+                                            <span class="material-icons-sharp">
+                                                add
+                                            </span>
+                                            <h3>Add Reminder</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </section>
+            </main>
+            <!-- end main -->
+        </div>
+    </section>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Add New User</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="index.html">
+                    <ul id="errors-valid" class="form-text w-100 text-start text-danger"></ul>
+                    <p id="valid-all-par" class="form-text text-start text-danger"></p>
+                    <div class="form-group mb-2">
+                        <input type="text" name="userName" id="user-name" placeholder="username">
+                        <p id="valid-username-par" class="form-text text-start text-muted ps-1">please enter your username is required</p>
+                        <span id="valid-icon-name" class="valid-icon"><img src="images/valid-icon.png" alt=""></span>
+                    </div>
+                    <div class="form-group mb-2">
+                        <input type="text" name="email" id="user-email" placeholder="email">
+                        <p id="valid-email-par" class="form-text text-start text-muted ps-1">please enter your email is required</p>
+                        <span id="valid-icon-email" class="valid-icon"><img src="images/valid-icon.png" alt=""></span>
+                    </div>
+                    <div class="form-group mb-2">
+                        <input type="text" name="age" id="user-age" placeholder="age">
+                        <p id="valid-age-par" class="form-text text-start text-muted ps-1">please enter your age is required</p>
+                        <span id="valid-icon-age" class="valid-icon"><img src="images/valid-icon.png" alt=""></span>
+                    </div>
+                    <div class="form-group mb-2">
+                        <input type="password" name="password" id="user-password" placeholder="password">
+                        <p id="valid-pass-par" class="form-text text-start text-muted ps-1">please enter your password is required</p>
+                        <span id="valid-icon-pass" class="valid-icon"><img src="images/valid-icon.png" alt=""></span>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Create</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title-course modal-title" id="exampleModalLabel">Add New Course</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="index.html">
+                        <div class="form-group mb-2">
+                            <input class="form-control" type="text" name="course-name" id="course-name" placeholder="course name">
+                            <p id="valid-coursename-par" class="form-text text-start ps-1">please enter course name is required</p>
+                        </div>
+                        <div class="form-group mb-2">
+                            <select class="form-select" name="payment" id="course-payment">
+                                <option value="">choose payment</option>
+                                <option value="Due">Due</option>
+                                <option value="Refunded">Refunded</option>
+                                <option value="Paid">Paid</option>
+                            </select>
+                            <p id="valid-payment-par" class="form-text text-start ps-1">please enter payment way is required</p>
+                        </div>
+                        <div class="form-group mb-2">
+                            <select class="form-select" name="status" id="course-status">
+                                <option value="">choose status</option>
+                                <option value="Pending">Pending</option>
+                                <option value="Declined">Declined</option>
+                                <option value="Active">Active</option>
+                            </select>
+                            <p id="valid-status-par" class="form-text text-start ps-1">please enter status is required</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button id="close-btn" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button id="submit-btn" data-action="create" data-course="none" type="submit" class="btn btn-primary">Create</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            </div>
+        </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Delete Course</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                Are You Sure Want Delete This Course ???
+                    <h3 id="course-name-confirm" class="text-info text-center p-3">Javascript</h3>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-danger" data-course data-bs-dismiss="modal">Delete</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/register.js" type="module"></script>
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>
