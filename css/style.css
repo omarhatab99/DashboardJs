@@ -782,6 +782,21 @@ form input:focus {
     outline: none;
 }
 
+form select {
+    background-color: #f3f3f3ba;
+    border: none;
+    border-bottom: 2px solid #adb5bd;
+    outline: none;
+    padding: 17px;
+    width: 100%;
+    transition: 0.3s;
+}
+
+form select:focus {
+    box-shadow: 0 0 5px 0px #D3D3D3;
+    outline: none;
+}
+
 form .form-group {
     width: 100%;
     position: relative;

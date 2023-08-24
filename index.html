@@ -340,7 +340,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary">Create</button>
+                        <button id="register-btn" type="submit" class="btn btn-primary">Create</button>
                     </div>
                 </form>
             </div>
@@ -360,11 +360,11 @@
                 <div class="modal-body">
                     <form action="index.html">
                         <div class="form-group mb-2">
-                            <input class="form-control" type="text" name="course-name" id="course-name" placeholder="course name">
+                            <input type="text" name="course-name" id="course-name" placeholder="course name">
                             <p id="valid-coursename-par" class="form-text text-start ps-1">please enter course name is required</p>
                         </div>
                         <div class="form-group mb-2">
-                            <select class="form-select" name="payment" id="course-payment">
+                            <select name="payment" id="course-payment">
                                 <option value="">choose payment</option>
                                 <option value="Due">Due</option>
                                 <option value="Refunded">Refunded</option>
@@ -373,7 +373,7 @@
                             <p id="valid-payment-par" class="form-text text-start ps-1">please enter payment way is required</p>
                         </div>
                         <div class="form-group mb-2">
-                            <select class="form-select" name="status" id="course-status">
+                            <select name="status" id="course-status">
                                 <option value="">choose status</option>
                                 <option value="Pending">Pending</option>
                                 <option value="Declined">Declined</option>

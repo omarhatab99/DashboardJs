@@ -197,9 +197,7 @@ window.addEventListener("click" , function(event) {
 
     if(event.target.id === "delete") { //delete
         let findCourse = getCourseByNumber(event.target.dataset.course);
-
-        console.log(event.target.dataset.course);
-        
+                
         document.getElementById("course-name-confirm").innerHTML = findCourse.courseName;
 
         deleteCourse.dataset.course = event.target.dataset.course;

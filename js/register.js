@@ -13,10 +13,9 @@ let validIconName = document.getElementById("valid-icon-name");
 let validIconAge = document.getElementById("valid-icon-age");
 let validIconEmail = document.getElementById("valid-icon-email");
 let validIconPass = document.getElementById("valid-icon-pass");
-let buttonSubmit = document.querySelector("#exampleModal button");
+let buttonSubmit = document.getElementById("register-btn");
 let errors = [];
 let users = [];
-
 
 //check users array
 if(localStorage.getItem("users")) {
@@ -149,8 +148,7 @@ if(localStorage.getItem("users")) {
         }
     }  
 
-    document.forms[0].onsubmit = function(event) {
-        
+    document.forms[0].onsubmit = function(event) {        
         let userValid = false;
         let ageValid = false;
         let emailValid = false;
@@ -241,6 +239,7 @@ if(localStorage.getItem("users")) {
 
         if(userValid === false || ageValid === false || emailValid === false || passwordValid === false) {
             event.preventDefault();
+            console.log("omar");
         }
         else {
             let user = {
